@@ -27,9 +27,7 @@ import { z } from "zod";
 
 const formSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(6, {
-    message: "Password mast be at least 6 characters",
-  }),
+  password: z.string(),
 });
 
 const LoginPage = () => {
@@ -93,7 +91,7 @@ const LoginPage = () => {
         </Form>
       </CardContent>
       <CardFooter className="justify-between w-full">
-        <small>Don't have an account?</small>
+        <small>Do not have an account?</small>
         <Button asChild variant={"outline"} size={"sm"}>
           <Link href={"/sign-up"}>Sign up</Link>
         </Button>

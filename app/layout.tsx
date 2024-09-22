@@ -3,12 +3,10 @@ import "./globals.css";
 
 import { cn } from "@/lib/utils";
 
-import { Poppins, Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/mode-togglre";
 import Logo from "@/components/logo/logo";
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
